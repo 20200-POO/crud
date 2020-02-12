@@ -20,6 +20,15 @@ public class Conn {
 			ex.printStackTrace();
 		}
         return conn;
+	}
+	public static void closeSQLite(Connection conn) {
+		try { 
+			if (conn != null) {
+                conn.close();
+			}
+		} catch (SQLException ex) {
+			ex.printStackTrace();
+		}
     }
 
 }
