@@ -19,4 +19,17 @@ public class PersonDAO {
             ex.printStackTrace();
         }
     }
+
+    public void delete(int id) {// Create and update
+        Connection conn = Conn.connectSQLite();
+        try {
+            if (conn != null) {
+                Statement statement = conn.createStatement();
+                statement.executeUpdate(
+                        "delete from Person where id="+id+"");
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+    }
 }

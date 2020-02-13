@@ -7,7 +7,7 @@ public class Person {
     private int id;
     private String name;
     private String cellular;
-    // Métodos (Getter y Setter)
+    
     public int getId() {
         return id;
     }
@@ -31,5 +31,4 @@ public class Person {
     public void setCellular(String cellular) {
         this.cellular = cellular;
     }
- 
 }

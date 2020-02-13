@@ -14,11 +14,16 @@ import a.PersonDAO;
 public class Crud {
     public static void main(String[] args) {
 
+
         PersonDAO dao= new PersonDAO();
         Person p= new Person();
         p.setName("Miguel");
-        p.setCellular("angel");
-        dao.save(p);
+        p.setCellular("999");        
+        //dao.save(p);
+
+        //Delete
+        dao.delete(5);
+
 
         ResultSet rs = list();
         try {
